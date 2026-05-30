@@ -30,76 +30,89 @@ export default function Home() {
   return (
     <Layout description={t.home.heroSubtitle}>
       <Box
-        bg="brand.700"
-        color="white"
-        position="relative"
-        overflow="hidden"
+        bg='brand.700'
+        color='white'
+        position='relative'
+        overflow='hidden'
         py={{ base: 16, md: 28 }}
       >
         <Box
-          position="absolute"
+          position='absolute'
           inset={0}
-          bgGradient="linear(to-br, brand.700, brand.800)"
+          bgGradient='linear(to-br, brand.700, brand.800)'
           opacity={0.95}
         />
         <Box
-          position="absolute"
+          position='absolute'
           right={{ base: '-200px', md: '-80px' }}
-          top="-100px"
+          top='-100px'
           w={{ base: '500px', md: '700px' }}
           h={{ base: '500px', md: '700px' }}
-          borderRadius="full"
-          bg="brand.600"
+          borderRadius='full'
+          bg='brand.600'
           opacity={0.35}
         />
         <Box
-          position="absolute"
-          left="-100px"
-          bottom="-150px"
-          w="400px"
-          h="400px"
-          borderRadius="full"
-          bg="accent.500"
+          position='absolute'
+          left='-100px'
+          bottom='-150px'
+          w='400px'
+          h='400px'
+          borderRadius='full'
+          bg='accent.500'
           opacity={0.1}
         />
 
-        <Container maxW="6xl" position="relative">
-          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center">
+        <Container maxW='6xl' position='relative'>
+          <SimpleGrid
+            columns={{ base: 1, md: 2 }}
+            spacing={10}
+            alignItems='center'
+          >
             <Stack spacing={6}>
               <Text
-                color="accent.300"
+                color='accent.300'
                 fontWeight={600}
-                fontSize="sm"
-                letterSpacing="0.1em"
-                textTransform="uppercase"
+                fontSize='sm'
+                letterSpacing='0.1em'
+                textTransform='uppercase'
               >
                 {t.home.heroEyebrow}
               </Text>
               <Heading
-                as="h1"
-                size="3xl"
-                color="white"
-                lineHeight="1.05"
-                letterSpacing="-0.02em"
+                as='h1'
+                size='3xl'
+                color='white'
+                lineHeight='1.05'
+                letterSpacing='-0.02em'
               >
                 {t.home.heroTitle}
               </Heading>
-              <Text fontSize={{ base: 'md', md: 'lg' }} color="whiteAlpha.800" maxW="xl">
+              <Text
+                fontSize={{ base: 'md', md: 'lg' }}
+                color='whiteAlpha.800'
+                maxW='xl'
+              >
                 {t.home.heroSubtitle}
               </Text>
-              <HStack spacing={4} flexWrap="wrap">
-                <NextLink href="/callback" passHref legacyBehavior>
-                  <Button as="a" colorScheme="accent" size="lg" rightIcon={<Icon as={FiArrowRight} />}>
+              <HStack spacing={4} flexWrap='wrap'>
+                <NextLink href='/callback' passHref legacyBehavior>
+                  <Button
+                    as='a'
+                    colorScheme='accent'
+                    size='lg'
+                    rightIcon={<Icon as={FiArrowRight} />}
+                  >
                     {t.home.ctaPrimary}
                   </Button>
                 </NextLink>
-                <NextLink href="/gallery" passHref legacyBehavior>
+                <NextLink href='/gallery' passHref legacyBehavior>
                   <Button
-                    as="a"
-                    size="lg"
-                    variant="outline"
-                    color="white"
-                    borderColor="whiteAlpha.500"
+                    as='a'
+                    size='lg'
+                    variant='outline'
+                    color='white'
+                    borderColor='whiteAlpha.500'
                     _hover={{ bg: 'whiteAlpha.100' }}
                   >
                     {t.home.ctaSecondary}
@@ -109,36 +122,36 @@ export default function Home() {
             </Stack>
 
             <Box
-              bg="whiteAlpha.100"
-              backdropFilter="blur(10px)"
-              border="1px solid"
-              borderColor="whiteAlpha.200"
-              borderRadius="xl"
+              bg='whiteAlpha.100'
+              backdropFilter='blur(10px)'
+              border='1px solid'
+              borderColor='whiteAlpha.200'
+              borderRadius='xl'
               p={{ base: 6, md: 8 }}
               display={{ base: 'none', md: 'block' }}
             >
               <SimpleGrid columns={3} spacing={6}>
-                <Stack spacing={1} textAlign="center">
-                  <Text fontSize="4xl" fontWeight={700} color="mint.300">
+                <Stack spacing={1} textAlign='center'>
+                  <Text fontSize='4xl' fontWeight={700} color='mint.300'>
                     15+
                   </Text>
-                  <Text fontSize="xs" color="whiteAlpha.800">
+                  <Text fontSize='xs' color='whiteAlpha.800'>
                     {t.home.statsLabel1}
                   </Text>
                 </Stack>
-                <Stack spacing={1} textAlign="center">
-                  <Text fontSize="4xl" fontWeight={700} color="mint.300">
+                <Stack spacing={1} textAlign='center'>
+                  <Text fontSize='4xl' fontWeight={700} color='mint.300'>
                     3000+
                   </Text>
-                  <Text fontSize="xs" color="whiteAlpha.800">
+                  <Text fontSize='xs' color='whiteAlpha.800'>
                     {t.home.statsLabel2}
                   </Text>
                 </Stack>
-                <Stack spacing={1} textAlign="center">
-                  <Text fontSize="4xl" fontWeight={700} color="mint.300">
+                <Stack spacing={1} textAlign='center'>
+                  <Text fontSize='4xl' fontWeight={700} color='mint.300'>
                     12
                   </Text>
-                  <Text fontSize="xs" color="whiteAlpha.800">
+                  <Text fontSize='xs' color='whiteAlpha.800'>
                     {t.home.statsLabel3}
                   </Text>
                 </Stack>
@@ -148,29 +161,35 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Container maxW="6xl" py={{ base: 12, md: 20 }}>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center">
+      <Container maxW='6xl' py={{ base: 12, md: 20 }}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2 }}
+          spacing={10}
+          alignItems='center'
+        >
           <Box>
-            <Heading as="h2" size="xl" mb={5}>
+            <Heading as='h2' size='xl' mb={5}>
               {t.home.introTitle}
             </Heading>
-            <Text fontSize="lg" color="ink.700" lineHeight="1.7">
+            <Text fontSize='lg' color='ink.700' lineHeight='1.7'>
               {t.home.introBody}
             </Text>
           </Box>
           <Box
-            bg="surface.raised"
+            bg='surface.raised'
             p={8}
-            borderRadius="lg"
-            borderLeft="4px solid"
-            borderLeftColor="accent.500"
-            boxShadow="sm"
+            borderRadius='lg'
+            borderLeft='4px solid'
+            borderLeftColor='brand.700'
+            boxShadow='0 4px 6px rgba(0, 0, 0, 0.07)'
+            border='1px solid'
+            borderColor='surface.sunken'
           >
-            <VStack align="stretch" spacing={3}>
-              {['1 päev', '12 a. garantii', 'Tolmuvaba', 'EU sertifikaat'].map((item, i) => (
+            <VStack align='stretch' spacing={4}>
+              {t.home.benefits.map((item, i) => (
                 <HStack key={i} spacing={3}>
-                  <Icon as={FiCheckCircle} color="accent.500" boxSize={5} />
-                  <Text fontWeight={600} color="brand.700">
+                  <Icon as={FiCheckCircle} color='brand.700' boxSize={5} />
+                  <Text fontWeight={600} color='ink.900'>
                     {item}
                   </Text>
                 </HStack>
@@ -180,9 +199,9 @@ export default function Home() {
         </SimpleGrid>
       </Container>
 
-      <Box bg="surface.sunken" py={{ base: 12, md: 20 }}>
-        <Container maxW="6xl">
-          <Heading as="h2" size="xl" mb={10} textAlign="center">
+      <Box bg='surface.base' py={{ base: 12, md: 20 }}>
+        <Container maxW='6xl'>
+          <Heading as='h2' size='xl' mb={10} textAlign='center'>
             {t.home.advantagesTitle}
           </Heading>
           <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} spacing={6}>
@@ -191,29 +210,34 @@ export default function Home() {
               return (
                 <Box
                   key={i}
-                  bg="surface.raised"
-                  p={6}
-                  borderRadius="lg"
-                  boxShadow="sm"
-                  _hover={{ boxShadow: 'md', transform: 'translateY(-2px)' }}
-                  transition="all 0.2s"
+                  bg='surface.raised'
+                  p={7}
+                  borderRadius='lg'
+                  border='1px solid'
+                  borderColor='surface.sunken'
+                  boxShadow='0 2px 8px rgba(0, 0, 0, 0.06)'
+                  _hover={{
+                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12)',
+                    transform: 'translateY(-4px)',
+                  }}
+                  transition='all 0.3s ease'
                 >
                   <Box
-                    w="48px"
-                    h="48px"
-                    borderRadius="md"
-                    bg="brand.50"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
+                    w='48px'
+                    h='48px'
+                    borderRadius='md'
+                    bg='brand.50'
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
                     mb={4}
                   >
-                    <Icon as={IconCmp} boxSize={6} color="brand.700" />
+                    <Icon as={IconCmp} boxSize={6} color='brand.700' />
                   </Box>
-                  <Heading as="h3" size="sm" mb={2}>
+                  <Heading as='h3' size='sm' mb={3} color='brand.900'>
                     {a.title}
                   </Heading>
-                  <Text color="ink.700" fontSize="sm" lineHeight="1.6">
+                  <Text color='ink.700' fontSize='sm' lineHeight='1.7'>
                     {a.body}
                   </Text>
                 </Box>
@@ -223,67 +247,82 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Container maxW="6xl" py={{ base: 12, md: 20 }}>
-        <Heading as="h2" size="xl" mb={10} textAlign="center">
+      <Container maxW='6xl' py={{ base: 12, md: 20 }}>
+        <Heading as='h2' size='xl' mb={10} textAlign='center'>
           {t.home.typesTitle}
         </Heading>
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={6}>
           {t.services.items.slice(0, 6).map((s, i) => (
             <Box
               key={i}
-              bg="surface.raised"
-              borderRadius="lg"
-              overflow="hidden"
-              boxShadow="sm"
-              _hover={{ boxShadow: 'md' }}
-              transition="all 0.2s"
+              bg='surface.raised'
+              borderRadius='lg'
+              overflow='hidden'
+              border='1px solid'
+              borderColor='surface.sunken'
+              boxShadow='0 2px 8px rgba(0, 0, 0, 0.06)'
+              _hover={{
+                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12)',
+                transform: 'translateY(-4px)',
+              }}
+              transition='all 0.3s ease'
             >
               <Box
-                h="160px"
+                h='160px'
                 bgGradient={`linear(135deg, brand.${600 - (i % 3) * 100}, brand.${700 - (i % 3) * 100})`}
-                position="relative"
+                position='relative'
               >
                 <Text
-                  position="absolute"
+                  position='absolute'
                   bottom={3}
                   right={4}
-                  color="whiteAlpha.500"
-                  fontSize="6xl"
+                  color='whiteAlpha.500'
+                  fontSize='6xl'
                   fontWeight={700}
                 >
                   {String(i + 1).padStart(2, '0')}
                 </Text>
               </Box>
               <Box p={5}>
-                <Heading as="h3" size="sm" mb={2}>
+                <Heading as='h3' size='sm' mb={2}>
                   {s.title}
                 </Heading>
-                <Text color="ink.700" fontSize="sm">
+                <Text color='ink.700' fontSize='sm'>
                   {s.body}
                 </Text>
               </Box>
             </Box>
           ))}
         </SimpleGrid>
-        <Box textAlign="center" mt={10}>
-          <NextLink href="/services" passHref legacyBehavior>
-            <Button as="a" variant="outline" size="lg" rightIcon={<Icon as={FiArrowRight} />}>
+        <Box textAlign='center' mt={10}>
+          <NextLink href='/services' passHref legacyBehavior>
+            <Button
+              as='a'
+              variant='outline'
+              size='lg'
+              rightIcon={<Icon as={FiArrowRight} />}
+            >
               {t.common.learnMore}
             </Button>
           </NextLink>
         </Box>
       </Container>
 
-      <Box bg="brand.700" color="white" py={{ base: 12, md: 16 }}>
-        <Container maxW="4xl" textAlign="center">
-          <Heading as="h2" size="xl" color="white" mb={4}>
+      <Box bg='brand.700' color='white' py={{ base: 12, md: 16 }}>
+        <Container maxW='4xl' textAlign='center'>
+          <Heading as='h2' size='xl' color='white' mb={4}>
             {t.home.ctaBannerTitle}
           </Heading>
-          <Text fontSize="lg" color="whiteAlpha.800" mb={8}>
+          <Text fontSize='lg' color='whiteAlpha.800' mb={8}>
             {t.home.ctaBannerBody}
           </Text>
-          <NextLink href="/callback" passHref legacyBehavior>
-            <Button as="a" colorScheme="accent" size="lg" rightIcon={<Icon as={FiArrowRight} />}>
+          <NextLink href='/callback' passHref legacyBehavior>
+            <Button
+              as='a'
+              colorScheme='accent'
+              size='lg'
+              rightIcon={<Icon as={FiArrowRight} />}
+            >
               {t.common.requestCallback}
             </Button>
           </NextLink>

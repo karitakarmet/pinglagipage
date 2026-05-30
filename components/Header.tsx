@@ -23,8 +23,6 @@ import { useT } from '@/lib/useT';
 
 const navItems = [
   { key: 'home', href: '/' },
-  { key: 'services', href: '/services' },
-  { key: 'gallery', href: '/gallery' },
   { key: 'about', href: '/about' },
   { key: 'faq', href: '/faq' },
   { key: 'contact', href: '/contact' },
@@ -47,8 +45,9 @@ export default function Header() {
       position='sticky'
       top={0}
       zIndex={20}
+      boxShadow='0 1px 3px rgba(0, 0, 0, 0.05)'
     >
-      <Container maxW='6xl' py={3}>
+      <Container maxW='6xl' py={4}>
         <Flex align='center' justify='space-between'>
           <NextLink href='/' passHref legacyBehavior>
             <Box as='a' display='flex' alignItems='center' gap={2}>
@@ -72,9 +71,10 @@ export default function Header() {
                     isActive(item.href) ? '2px solid' : '2px solid transparent'
                   }
                   borderColor={
-                    isActive(item.href) ? 'accent.500' : 'transparent'
+                    isActive(item.href) ? 'brand.700' : 'transparent'
                   }
                   borderRadius={0}
+                  transition='all 0.2s ease'
                   _hover={{ color: 'brand.700', bg: 'transparent' }}
                 >
                   {t.nav[item.key]}
