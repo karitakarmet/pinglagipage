@@ -24,18 +24,21 @@ export default function Contact() {
       label: t.contact.phoneLabel,
       value: t.contact.phone,
       href: `tel:${t.contact.phone.replace(/\s/g, '')}`,
+      note: undefined,
     },
     {
       icon: FiMail,
       label: t.contact.emailLabel,
       value: t.contact.email,
       href: `mailto:${t.contact.email}`,
+      note: undefined,
     },
     {
       icon: FiClock,
       label: t.contact.hoursLabel,
       value: t.contact.hours,
       href: undefined,
+      note: t.contact.hoursNote,
     },
   ];
 
@@ -86,6 +89,11 @@ export default function Contact() {
                   ) : (
                     <Text fontSize='lg' color='brand.700' fontWeight={600}>
                       {item.value}
+                    </Text>
+                  )}
+                  {item.note && (
+                    <Text fontSize='sm' color='ink.500' mt={1}>
+                      {item.note}
                     </Text>
                   )}
                 </Box>

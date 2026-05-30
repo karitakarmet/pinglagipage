@@ -11,6 +11,7 @@ import {
   Icon,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
+import NextImage from 'next/image';
 import Layout from '@/components/Layout';
 import { useT } from '@/lib/useT';
 import {
@@ -23,6 +24,15 @@ import {
 } from 'react-icons/fi';
 
 const advantageIcons = [FiShield, FiClock, FiDroplet, FiAward];
+
+const SERVICE_IMAGES = [
+  '/mattlagi.png',
+  '/glossylagi.png',
+  '/satiinlagi.png',
+  '/fotolagi.png',
+  '/valgustusegalagi.png',
+  '/mitmetasandilinelagi.png',
+];
 
 export default function Home() {
   const t = useT();
@@ -227,29 +237,30 @@ export default function Home() {
               }}
               transition='all 0.3s ease'
             >
-              <Box
-                h='160px'
-                bgGradient={`linear(135deg, brand.${600 - (i % 3) * 100}, brand.${700 - (i % 3) * 100})`}
-                position='relative'
-              >
+              <Box h='160px' position='relative' overflow='hidden'>
+                <NextImage
+                  src={SERVICE_IMAGES[i]}
+                  alt={s.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                />
                 <Text
                   position='absolute'
                   bottom={3}
                   right={4}
-                  color='whiteAlpha.500'
+                  color='white'
                   fontSize='6xl'
                   fontWeight={700}
+                  textShadow='0 1px 4px rgba(0,0,0,0.5)'
                 >
                   {String(i + 1).padStart(2, '0')}
                 </Text>
               </Box>
               <Box p={5}>
-                <Heading as='h3' size='sm' mb={2}>
+                <Heading as='h3' size='sm'>
                   {s.title}
                 </Heading>
-                <Text color='ink.700' fontSize='sm'>
-                  {s.body}
-                </Text>
               </Box>
             </Box>
           ))}

@@ -77,6 +77,7 @@ type Dict = {
     email: string;
     hoursLabel: string;
     hours: string;
+    hoursNote: string;
   };
   footer: {
     tagline: string;
@@ -109,26 +110,26 @@ export const translations: Record<Locale, Dict> = {
       heroEyebrow: 'MODERNSED LAELAHENDUSED',
       heroTitle: 'Pinglaed, mis kestavad aastakümneid',
       heroSubtitle:
-        'Professionaalne paigaldus, kvaliteetsed Euroopa materjalid ja 12-aastane kirjalik garantii.',
+        'Professionaalne paigaldus, kvaliteetsed Euroopa materjalid, kirjalik garantii ja tasuta garantiiülevaatus.',
       ctaPrimary: 'Telli tasuta kõne',
       ctaSecondary: 'Vaata töid',
       statsLabel0: 'Tasuta konsultatsioon',
       statsLabel1: 'Leiame teie ruumile sobivaima lahenduse',
       statsLabel2: 'paigaldatud objekti',
-      statsLabel3: 'aastat garantiid',
+      statsLabel3: 'a. garantii materjalile',
       introTitle: 'Mis on pinglagi?',
       introBody:
         'Pinglagi on kaasaegne laelahendus, mis kombineerib esteetika ja vastupidavuse. Õhuke PVC- või kangast valmistatud kile pingutatakse spetsiaalse alumiiniumprofiili sisse, varjates kõik laetaseme ebatasasused ühe tööpäevaga – ilma tolmu ja koristamiseta.',
-      benefits: ['1 päev', '12 a. garantii', 'Tolmuvaba', 'EU sertifikaat'],
+      benefits: ['1 päev', 'Kirjalik garantii', 'Tolmuvaba', 'EU sertifikaat'],
       advantagesTitle: 'Miks valida Pinglagi?',
       advantages: [
         {
-          title: '12 aastat garantiid',
-          body: 'Anname kirjaliku garantii nii materjalile kui ka paigaldusele.',
+          title: 'Garantii',
+          body: 'Kirjalik 15-aastane garantii materjalile, 2-aastane tööde garantii ja tasuta garantiiülevaatus.',
         },
         {
           title: 'Üks päev paigaldust',
-          body: 'Enamik töid valmib ühe tööpäeva jooksul, mööblit pole vaja välja viia.',
+          body: 'Enamik töid valmib ühe tööpäeva jooksul, mööblit ei ole vaja välja viia.',
         },
         {
           title: 'Veekindel',
@@ -136,13 +137,13 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Sertifitseeritud materjalid',
-          body: 'Kasutame ainult Saksa ja Prantsuse päritolu kilesid.',
+          body: 'Kasutame ainult Euroopa päritolu kilesid.',
         },
       ],
       typesTitle: 'Pinglae tüübid',
       ctaBannerTitle: 'Valmis alustama?',
       ctaBannerBody:
-        'Tasuta mõõdistamine ja siduv hinnapakkumine sinu kodus 24 tunni jooksul.',
+        'Tasuta mõõdistamine ja hinnapakkumine kiirelt ning teile sobival ajal.',
     },
     services: {
       title: 'Meie teenused',
@@ -196,7 +197,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Ausus',
-          body: 'Selge hind, kirjalik garantii, ilma varjatud kuludeta.',
+          body: 'Selge hind, kirjalik garantii koos tasuta garantiiülevaatusega ja ilma varjatud kuludeta.',
         },
         {
           title: 'Sertifikaadid',
@@ -216,12 +217,12 @@ export const translations: Record<Locale, Dict> = {
           a: 'Ei. Pinglae paigaldamine on praktiliselt tolmuvaba – mööblit ei ole vaja välja viia.',
         },
         {
-          q: 'Kas pinglagi talub vett ülevalt?',
-          a: 'Jah, peab vastu kuni 100 liitrit vett ruutmeetri kohta. Pärast tühjendamist taastab lagi oma esialgse kuju.',
+          q: 'Kuidas käitub pinglagi veeuputuse korral?',
+          a: 'Pinglagi peab vee väga hästi kinni ning suudab taluda kuni 100 liitrit vett ruutmeetri kohta. Vee eemaldamise järel taastab lagi enamasti oma algse kuju ega vaja väljavahetamist. Erinevalt tavapärastest lagedest ei ima pinglagi niiskust, ei paisu ega kahjustu samal viisil nagu kips- või ripplagi, mis võib veekahjustuse korral vajada ulatuslikku remonti või täielikku väljavahetamist.',
         },
         {
           q: 'Milline on garantii?',
-          a: 'Anname kirjaliku 12-aastase garantii nii materjalile kui paigaldusele.',
+          a: 'Anname kirjaliku 15-aastase garantii materjalile ja 2-aastase garantii tööle. Lisaks teeme tasuta garantiiülevaatuse.',
         },
         {
           q: 'Kas saan ise valida valgustuse?',
@@ -262,12 +263,13 @@ export const translations: Record<Locale, Dict> = {
       email: 'info@pinglagi.eu',
       hoursLabel: 'Tööaeg',
       hours: 'E-R 9:00 - 18:00',
+      hoursNote: 'Muul ajal kokkuleppel – jäta päring teile sobival ajal.',
     },
     footer: {
       tagline: 'Kvaliteetsed pinglaed üle Eesti.',
       navTitle: 'Lehed',
       contactTitle: 'Kontakt',
-      copyright: '© 2026 Pinglagi OÜ. Kõik õigused kaitstud.',
+      copyright: '© 2026 Devign OÜ. Kõik õigused kaitstud.',
     },
   },
   en: {
@@ -289,25 +291,25 @@ export const translations: Record<Locale, Dict> = {
       freeQuote: 'Free measurement',
     },
     home: {
-      heroEyebrow: 'Stretch ceilings in Estonia since 2010',
+      heroEyebrow: 'MODERN CEILING SOLUTIONS',
       heroTitle: 'Stretch ceilings that last for decades',
       heroSubtitle:
-        'Professional installation, certified European materials, 12-year written warranty. Free on-site measurement anywhere in Estonia.',
+        'Professional installation, certified European materials, a written warranty, and a free warranty inspection.',
       ctaPrimary: 'Request a free call',
       ctaSecondary: 'See our work',
-      statsLabel0: 'years of experience',
-      statsLabel1: 'years of experience',
+      statsLabel0: 'Free consultation',
+      statsLabel1: 'We find the best solution for your space',
       statsLabel2: 'installed projects',
-      statsLabel3: 'years warranty',
+      statsLabel3: 'yr material warranty',
       introTitle: 'What is a stretch ceiling?',
       introBody:
         'A stretch ceiling is a modern ceiling solution that combines aesthetics with durability. A thin PVC or fabric membrane is tensioned into a special aluminium profile, hiding all ceiling imperfections in a single working day – without dust or cleanup.',
-      benefits: ['One day', '12-year warranty', 'Dust-free', 'EU certificate'],
+      benefits: ['One day', 'Written warranty', 'Dust-free', 'EU certificate'],
       advantagesTitle: 'Why choose Pinglagi?',
       advantages: [
         {
-          title: '12-year warranty',
-          body: 'Written guarantee on both material and installation.',
+          title: 'Warranty',
+          body: 'Written 15-year warranty on materials, 2-year warranty on works, and a free warranty inspection.',
         },
         {
           title: 'One day install',
@@ -319,13 +321,13 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Certified materials',
-          body: 'We use only certified membranes from Germany and France.',
+          body: 'We use only European-origin membranes.',
         },
       ],
       typesTitle: 'Ceiling types',
       ctaBannerTitle: 'Ready to start?',
       ctaBannerBody:
-        'Free measurement and binding quote at your home within 24 hours.',
+        'Free measurement and a quote quickly, at a time that suits you.',
     },
     services: {
       title: 'Our services',
@@ -367,9 +369,9 @@ export const translations: Record<Locale, Dict> = {
     about: {
       title: 'About us',
       paragraphs: [
-        'Pinglagi is an Estonian family-run business with over 15 years of experience installing stretch ceilings across Estonia and Scandinavia.',
-        'We work only with certified materials from Germany and France. Every project is led by an experienced foreman responsible for the result from start to finish.',
-        'Our goal is for every customer to receive a product that lasts decades and looks as good as on installation day.',
+        'Pinglagi is a team of certified stretch ceiling installers offering quality ceiling solutions across Estonia.',
+        'We work only with certified European materials and pay close attention to every detail to ensure a quality and durable result.',
+        'Our goal is to create stretch ceilings that combine aesthetics, durability, and impeccable finish.',
       ],
       valuesTitle: 'Our principles',
       values: [
@@ -379,11 +381,11 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Honesty',
-          body: 'Clear pricing, written warranty, no hidden costs.',
+          body: 'Clear pricing, written warranty with a free warranty inspection, and no hidden costs.',
         },
         {
-          title: 'Experience',
-          body: 'Over 15 years and thousands of installed projects.',
+          title: 'Certificates',
+          body: 'Certified installers and European quality materials.',
         },
       ],
     },
@@ -399,12 +401,12 @@ export const translations: Record<Locale, Dict> = {
           a: "No. The installation is virtually dust-free – you don't need to move furniture.",
         },
         {
-          q: 'Can a stretch ceiling handle water from above?',
-          a: 'Yes, it holds up to 100 litres per square metre. After draining, it returns to its original shape.',
+          q: 'What happens if water leaks through from above?',
+          a: 'A stretch ceiling holds water very well and can take up to 100 litres per square metre. After the water is removed, it typically returns to its original shape and does not need replacing. Unlike conventional ceilings, a stretch ceiling does not absorb moisture, swell, or get damaged the same way as plasterboard or suspended ceilings, which may need extensive repairs or full replacement after a flood.',
         },
         {
           q: "What's the warranty?",
-          a: 'A written 12-year warranty on both material and installation.',
+          a: 'We provide a written 15-year warranty on materials and a 2-year warranty on installation work. We also offer a free warranty inspection.',
         },
         {
           q: 'Can I choose my own lighting?',
@@ -438,19 +440,20 @@ export const translations: Record<Locale, Dict> = {
     contact: {
       title: 'Get in touch',
       intro:
-        'Visit our office, call or write – we reply within an hour on working days.',
+        'Write to us or book a callback at a time that suits you – we respond to all enquiries at the earliest opportunity.',
       phoneLabel: 'Phone',
       phone: '+37258051866',
       emailLabel: 'Email',
       email: 'info@pinglagi.eu',
       hoursLabel: 'Hours',
       hours: 'Mon-Fri 9:00 - 18:00',
+      hoursNote: 'Outside these hours by appointment – leave a request at a time that suits you.',
     },
     footer: {
       tagline: 'Quality stretch ceilings across Estonia.',
       navTitle: 'Pages',
       contactTitle: 'Contact',
-      copyright: '© 2026 Pinglagi OÜ. All rights reserved.',
+      copyright: '© 2026 Devign OÜ. All rights reserved.',
     },
   },
   ru: {
@@ -472,25 +475,25 @@ export const translations: Record<Locale, Dict> = {
       freeQuote: 'Бесплатный замер',
     },
     home: {
-      heroEyebrow: 'Натяжные потолки в Эстонии с 2010 года',
+      heroEyebrow: 'СОВРЕМЕННЫЕ ПОТОЛОЧНЫЕ РЕШЕНИЯ',
       heroTitle: 'Натяжные потолки, которые служат десятилетиями',
       heroSubtitle:
-        'Профессиональный монтаж, сертифицированные европейские материалы, письменная гарантия 12 лет. Бесплатный замер по всей Эстонии.',
+        'Профессиональный монтаж, сертифицированные европейские материалы, письменная гарантия и бесплатный гарантийный осмотр.',
       ctaPrimary: 'Заказать бесплатный звонок',
       ctaSecondary: 'Смотреть работы',
-      statsLabel0: 'лет опыта',
-      statsLabel1: 'лет опыта',
+      statsLabel0: 'Бесплатная консультация',
+      statsLabel1: 'Подберём лучшее решение для вашего помещения',
       statsLabel2: 'выполненных объектов',
-      statsLabel3: 'лет гарантии',
+      statsLabel3: 'лет гарантии на материалы',
       introTitle: 'Что такое натяжной потолок?',
       introBody:
         'Натяжной потолок – современное решение, сочетающее эстетику и долговечность. Тонкая ПВХ- или тканевая плёнка натягивается в специальный алюминиевый профиль, скрывая все неровности потолка за один рабочий день – без пыли и уборки.',
-      benefits: ['1 день', '12 лет гарантии', 'Без пыли', 'Сертификат ЕС'],
+      benefits: ['1 день', 'Письменная гарантия', 'Без пыли', 'Сертификат ЕС'],
       advantagesTitle: 'Почему Pinglagi?',
       advantages: [
         {
-          title: 'Гарантия 12 лет',
-          body: 'Письменная гарантия на материал и монтаж.',
+          title: 'Гарантия',
+          body: 'Письменная гарантия 15 лет на материалы, 2 года на монтаж и бесплатный гарантийный осмотр.',
         },
         {
           title: 'Монтаж за день',
@@ -502,13 +505,13 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Сертифицированные материалы',
-          body: 'Используем только плёнки из Германии и Франции.',
+          body: 'Используем только плёнки европейского производства.',
         },
       ],
       typesTitle: 'Типы потолков',
       ctaBannerTitle: 'Готовы начать?',
       ctaBannerBody:
-        'Бесплатный замер и точное предложение у вас дома в течение 24 часов.',
+        'Бесплатный замер и предложение быстро, в удобное для вас время.',
     },
     services: {
       title: 'Наши услуги',
@@ -550,9 +553,9 @@ export const translations: Record<Locale, Dict> = {
     about: {
       title: 'О нас',
       paragraphs: [
-        'Pinglagi – эстонская семейная компания с командой, имеющей более 15 лет опыта установки натяжных потолков в Эстонии и Скандинавии.',
-        'Работаем только с сертифицированными материалами из Германии и Франции. Каждый проект ведёт опытный мастер, отвечающий за результат от начала до конца.',
-        'Наша цель – чтобы каждый клиент получил продукт, который служит десятилетиями и выглядит так же хорошо, как в день монтажа.',
+        'Pinglagi – команда сертифицированных монтажников натяжных потолков, предлагающая качественные потолочные решения по всей Эстонии.',
+        'Работаем только с сертифицированными европейскими материалами и уделяем внимание каждой детали, чтобы обеспечить качественный и долговечный результат.',
+        'Наша цель – создавать натяжные потолки, объединяющие эстетику, долговечность и безупречную отделку.',
       ],
       valuesTitle: 'Наши принципы',
       values: [
@@ -562,9 +565,12 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Честность',
-          body: 'Понятная цена, письменная гарантия, без скрытых расходов.',
+          body: 'Понятная цена, письменная гарантия с бесплатным гарантийным осмотром, без скрытых расходов.',
         },
-        { title: 'Опыт', body: 'Более 15 лет работы и тысячи объектов.' },
+        {
+          title: 'Сертификаты',
+          body: 'Сертифицированные монтажники и европейские материалы высокого качества.',
+        },
       ],
     },
     faq: {
@@ -579,12 +585,12 @@ export const translations: Record<Locale, Dict> = {
           a: 'Нет. Монтаж практически без пыли – мебель выносить не нужно.',
         },
         {
-          q: 'Выдержит ли потолок воду сверху?',
-          a: 'Да, до 100 литров на квадратный метр. После слива воды потолок восстанавливает форму.',
+          q: 'Что будет, если сверху прольётся вода?',
+          a: 'Натяжной потолок отлично удерживает воду и выдерживает до 100 литров на квадратный метр. После удаления воды он, как правило, возвращает первоначальную форму и не требует замены. В отличие от обычных потолков, натяжной потолок не впитывает влагу, не разбухает и не повреждается так, как гипсокартонный или подвесной потолок, который при заливе может потребовать серьёзного ремонта или полной замены.',
         },
         {
           q: 'Какая гарантия?',
-          a: 'Письменная гарантия 12 лет на материал и монтаж.',
+          a: 'Даём письменную гарантию 15 лет на материалы и 2 года на монтаж. Также проводим бесплатный гарантийный осмотр.',
         },
         {
           q: 'Можно выбрать освещение?',
@@ -618,19 +624,20 @@ export const translations: Record<Locale, Dict> = {
     contact: {
       title: 'Свяжитесь с нами',
       intro:
-        'Заходите в офис, звоните или пишите – отвечаем в рабочие дни в течение часа.',
+        'Напишите нам или закажите обратный звонок в удобное время – отвечаем на запросы при первой возможности.',
       phoneLabel: 'Телефон',
       phone: '+37258051866',
       emailLabel: 'E-mail',
       email: 'info@pinglagi.eu',
       hoursLabel: 'Часы работы',
       hours: 'Пн-Пт 9:00 - 18:00',
+      hoursNote: 'В другое время по договорённости – оставьте заявку в удобное для вас время.',
     },
     footer: {
       tagline: 'Качественные натяжные потолки по всей Эстонии.',
       navTitle: 'Страницы',
       contactTitle: 'Контакты',
-      copyright: '© 2026 Pinglagi OÜ. Все права защищены.',
+      copyright: '© 2026 Devign OÜ. Все права защищены.',
     },
   },
 };
