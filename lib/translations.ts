@@ -24,6 +24,7 @@ type Dict = {
     heroSubtitle: string;
     ctaPrimary: string;
     ctaSecondary: string;
+    statsLabel0: string;
     statsLabel1: string;
     statsLabel2: string;
     statsLabel3: string;
@@ -70,8 +71,6 @@ type Dict = {
   contact: {
     title: string;
     intro: string;
-    addressLabel: string;
-    address: string;
     phoneLabel: string;
     phone: string;
     emailLabel: string;
@@ -107,13 +106,14 @@ export const translations: Record<Locale, Dict> = {
       freeQuote: 'Tasuta mõõdistamine',
     },
     home: {
-      heroEyebrow: 'Pinglaed Eestis alates 2010',
+      heroEyebrow: 'MODERNSED LAELAHENDUSED',
       heroTitle: 'Pinglaed, mis kestavad aastakümneid',
       heroSubtitle:
-        'Professionaalne paigaldus, Euroopa sertifitseeritud materjalid, 12-aastane kirjalik garantii. Tasuta mõõdistamine kogu Eestis.',
+        'Professionaalne paigaldus, kvaliteetsed Euroopa materjalid ja 12-aastane kirjalik garantii.',
       ctaPrimary: 'Telli tasuta kõne',
       ctaSecondary: 'Vaata töid',
-      statsLabel1: 'aastat kogemust',
+      statsLabel0: 'Tasuta konsultatsioon',
+      statsLabel1: 'Leiame teie ruumile sobivaima lahenduse',
       statsLabel2: 'paigaldatud objekti',
       statsLabel3: 'aastat garantiid',
       introTitle: 'Mis on pinglagi?',
@@ -184,9 +184,9 @@ export const translations: Record<Locale, Dict> = {
     about: {
       title: 'Meist',
       paragraphs: [
-        'Pinglagi on Eestis tegutsev pereettevõte, mille meeskonnal on üle 15 aasta kogemust pinglagede paigaldamisel nii Eestis kui ka Skandinaavias.',
-        'Töötame ainult sertifitseeritud materjalidega Saksamaalt ja Prantsusmaalt. Iga projekti juhib kogenud meister, kes vastutab tulemuse eest algusest lõpuni.',
-        'Meie eesmärk on, et iga klient saaks toote, mis kestab aastakümneid ja näeb välja sama hästi nagu paigalduspäeval.',
+        'Pinglagi on sertifitseeritud pinglagede paigaldajate meeskond, kes pakub kvaliteetseid laelahendusi üle Eesti.',
+        'Töötame ainult sertifitseeritud Euroopa materjalidega ning pöörame tähelepanu igale detailile, et tagada kvaliteetne ja vastupidav tulemus.',
+        'Meie eesmärk on luua pinglaed, mis ühendavad esteetika, vastupidavuse ja laitmatu viimistluse.',
       ],
       valuesTitle: 'Meie põhimõtted',
       values: [
@@ -196,11 +196,11 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Ausus',
-          body: 'Selge hind, kirjalik garantii, ei mingeid varjatud kulusid.',
+          body: 'Selge hind, kirjalik garantii, ilma varjatud kuludeta.',
         },
         {
-          title: 'Kogemus',
-          body: 'Üle 15 aasta tööd ja tuhanded paigaldatud objektid.',
+          title: 'Sertifikaadid',
+          body: 'Sertifitseeritud paigaldajad ja Euroopa kvaliteetmaterjalid.',
         },
       ],
     },
@@ -213,7 +213,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           q: 'Kas paigaldus jätab tolmu maha?',
-          a: 'Ei. Pinglae paigaldamine on praktiliselt tolmuvaba – mööblit pole vaja välja viia.',
+          a: 'Ei. Pinglae paigaldamine on praktiliselt tolmuvaba – mööblit ei ole vaja välja viia.',
         },
         {
           q: 'Kas pinglagi talub vett ülevalt?',
@@ -255,9 +255,7 @@ export const translations: Record<Locale, Dict> = {
     contact: {
       title: 'Võta meiega ühendust',
       intro:
-        'Külasta meie kontorit, helista või kirjuta – vastame tööpäeviti tunni jooksul.',
-      addressLabel: 'Aadress',
-      address: 'Haapsalu, Tallinn & lähiümbrus',
+        'Kirjuta meile või broneeri tagasihelistamine endale sobival ajal – vastame päringutele esimesel võimalusel.',
       phoneLabel: 'Telefon',
       phone: '+37258051866',
       emailLabel: 'E-post',
@@ -297,6 +295,7 @@ export const translations: Record<Locale, Dict> = {
         'Professional installation, certified European materials, 12-year written warranty. Free on-site measurement anywhere in Estonia.',
       ctaPrimary: 'Request a free call',
       ctaSecondary: 'See our work',
+      statsLabel0: 'years of experience',
       statsLabel1: 'years of experience',
       statsLabel2: 'installed projects',
       statsLabel3: 'years warranty',
@@ -440,8 +439,6 @@ export const translations: Record<Locale, Dict> = {
       title: 'Get in touch',
       intro:
         'Visit our office, call or write – we reply within an hour on working days.',
-      addressLabel: 'Address',
-      address: 'Haapsalu, Tallinn & nearby areas',
       phoneLabel: 'Phone',
       phone: '+37258051866',
       emailLabel: 'Email',
@@ -481,6 +478,7 @@ export const translations: Record<Locale, Dict> = {
         'Профессиональный монтаж, сертифицированные европейские материалы, письменная гарантия 12 лет. Бесплатный замер по всей Эстонии.',
       ctaPrimary: 'Заказать бесплатный звонок',
       ctaSecondary: 'Смотреть работы',
+      statsLabel0: 'лет опыта',
       statsLabel1: 'лет опыта',
       statsLabel2: 'выполненных объектов',
       statsLabel3: 'лет гарантии',
@@ -621,8 +619,6 @@ export const translations: Record<Locale, Dict> = {
       title: 'Свяжитесь с нами',
       intro:
         'Заходите в офис, звоните или пишите – отвечаем в рабочие дни в течение часа.',
-      addressLabel: 'Адрес',
-      address: 'Haapsalu, Tallinn & nearby areas',
       phoneLabel: 'Телефон',
       phone: '+37258051866',
       emailLabel: 'E-mail',

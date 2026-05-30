@@ -35,34 +35,31 @@ export default function Home() {
         position='relative'
         overflow='hidden'
         py={{ base: 16, md: 28 }}
+        filter='brightness(0.92) saturate(0.88)'
+        sx={{
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            inset: 0,
+            backdropFilter: 'blur(0.3px)',
+          },
+        }}
+        backgroundImage={`
+   linear-gradient(
+    90deg,
+    rgba(15,35,75,0.98) 0%,
+    rgba(15,35,75,0.96) 45%,
+    rgba(15,35,75,0.82) 52%,
+    rgba(15,35,75,0.45) 62%,
+    rgba(15,35,75,0.10) 66.5%,
+    transparent 67%
+  ),
+    url('/heroimage.png')
+  `}
+        backgroundSize='cover'
+        backgroundPosition='center right'
+        backgroundRepeat='no-repeat'
       >
-        <Box
-          position='absolute'
-          inset={0}
-          bgGradient='linear(to-br, brand.700, brand.800)'
-          opacity={0.95}
-        />
-        <Box
-          position='absolute'
-          right={{ base: '-200px', md: '-80px' }}
-          top='-100px'
-          w={{ base: '500px', md: '700px' }}
-          h={{ base: '500px', md: '700px' }}
-          borderRadius='full'
-          bg='brand.600'
-          opacity={0.35}
-        />
-        <Box
-          position='absolute'
-          left='-100px'
-          bottom='-150px'
-          w='400px'
-          h='400px'
-          borderRadius='full'
-          bg='accent.500'
-          opacity={0.1}
-        />
-
         <Container maxW='6xl' position='relative'>
           <SimpleGrid
             columns={{ base: 1, md: 2 }}
@@ -106,7 +103,7 @@ export default function Home() {
                     {t.home.ctaPrimary}
                   </Button>
                 </NextLink>
-                <NextLink href='/gallery' passHref legacyBehavior>
+                {/* <NextLink href='/gallery' passHref legacyBehavior>
                   <Button
                     as='a'
                     size='lg'
@@ -117,46 +114,9 @@ export default function Home() {
                   >
                     {t.home.ctaSecondary}
                   </Button>
-                </NextLink>
+                </NextLink> */}
               </HStack>
             </Stack>
-
-            <Box
-              bg='whiteAlpha.100'
-              backdropFilter='blur(10px)'
-              border='1px solid'
-              borderColor='whiteAlpha.200'
-              borderRadius='xl'
-              p={{ base: 6, md: 8 }}
-              display={{ base: 'none', md: 'block' }}
-            >
-              <SimpleGrid columns={3} spacing={6}>
-                <Stack spacing={1} textAlign='center'>
-                  <Text fontSize='4xl' fontWeight={700} color='mint.300'>
-                    15+
-                  </Text>
-                  <Text fontSize='xs' color='whiteAlpha.800'>
-                    {t.home.statsLabel1}
-                  </Text>
-                </Stack>
-                <Stack spacing={1} textAlign='center'>
-                  <Text fontSize='4xl' fontWeight={700} color='mint.300'>
-                    3000+
-                  </Text>
-                  <Text fontSize='xs' color='whiteAlpha.800'>
-                    {t.home.statsLabel2}
-                  </Text>
-                </Stack>
-                <Stack spacing={1} textAlign='center'>
-                  <Text fontSize='4xl' fontWeight={700} color='mint.300'>
-                    12
-                  </Text>
-                  <Text fontSize='xs' color='whiteAlpha.800'>
-                    {t.home.statsLabel3}
-                  </Text>
-                </Stack>
-              </SimpleGrid>
-            </Box>
           </SimpleGrid>
         </Container>
       </Box>
