@@ -65,9 +65,6 @@ export default function Footer() {
             >
               {t.footer.contactTitle}
             </Heading>
-            <Text color='whiteAlpha.800' fontSize='sm'>
-              {t.contact.address}
-            </Text>
             <Link
               href={`tel:${t.contact.phone.replace(/\s/g, '')}`}
               color='whiteAlpha.800'
