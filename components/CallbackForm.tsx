@@ -17,14 +17,30 @@ import { useT } from '@/lib/useT';
 export default function CallbackForm() {
   const t = useT();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [form, setForm] = useState({ name: '', phone: '', time: 'now', message: '' });
 
   const onChange = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
     setForm({ ...form, [k]: e.target.value });
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch('/api/callback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -123,7 +139,14 @@ export default function CallbackForm() {
           />
         </FormControl>
 
-        <Button type="submit" colorScheme="accent" size="lg">
+        {error && (
+          <Alert status="error" borderRadius="md">
+            <AlertIcon />
+            Midagi läks valesti. Palun proovi uuesti või helista meile otse.
+          </Alert>
+        )}
+
+        <Button type="submit" colorScheme="accent" size="lg" isLoading={loading}>
           {t.callback.submit}
         </Button>
 
