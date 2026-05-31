@@ -20,12 +20,6 @@ export default function Layout({ children, pageTitle, description }: Props) {
         <title>{title}</title>
         {description && <meta name="description" content={description} />}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <Header />
       <Box as="main" minH="60vh">
