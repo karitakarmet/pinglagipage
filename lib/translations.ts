@@ -110,7 +110,7 @@ export const translations: Record<Locale, Dict> = {
       heroEyebrow: 'MODERNSED LAELAHENDUSED',
       heroTitle: 'Pinglaed, mis kestavad aastakümneid',
       heroSubtitle:
-        'Professionaalne paigaldus, kvaliteetsed Euroopa materjalid, kirjalik garantii ja tasuta garantiiülevaatus.',
+        'Professionaalne paigaldus, kvaliteetsed materjalid, kirjalik garantii ja tasuta garantiiülevaatus.',
       ctaPrimary: 'Telli tasuta kõne',
       ctaSecondary: 'Vaata töid',
       statsLabel0: 'Tasuta konsultatsioon',
@@ -137,7 +137,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Sertifitseeritud materjalid',
-          body: 'Kasutame ainult Euroopa päritolu kilesid.',
+          body: 'Kasutame kvaliteetseid ja vastupidavaid materjale usaldusväärsetelt tootjatelt.',
         },
       ],
       typesTitle: 'Pinglae tüübid',
@@ -186,7 +186,7 @@ export const translations: Record<Locale, Dict> = {
       title: 'Meist',
       paragraphs: [
         'Pinglagi on sertifitseeritud pinglagede paigaldajate meeskond, kes pakub kvaliteetseid laelahendusi üle Eesti.',
-        'Töötame ainult sertifitseeritud Euroopa materjalidega ning pöörame tähelepanu igale detailile, et tagada kvaliteetne ja vastupidav tulemus.',
+        'Töötame ainult sertifitseeritud materjalidega ning pöörame tähelepanu igale detailile, et tagada kvaliteetne ja vastupidav tulemus.',
         'Meie eesmärk on luua pinglaed, mis ühendavad esteetika, vastupidavuse ja laitmatu viimistluse.',
       ],
       valuesTitle: 'Meie põhimõtted',
@@ -201,7 +201,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Sertifikaadid',
-          body: 'Sertifitseeritud paigaldajad ja Euroopa kvaliteetmaterjalid.',
+          body: 'Sertifitseeritud paigaldajad ja kvaliteetmaterjalid.',
         },
       ],
     },
@@ -294,7 +294,7 @@ export const translations: Record<Locale, Dict> = {
       heroEyebrow: 'MODERN CEILING SOLUTIONS',
       heroTitle: 'Stretch ceilings that last for decades',
       heroSubtitle:
-        'Professional installation, certified European materials, a written warranty, and a free warranty inspection.',
+        'Professional installation, quality materials, a written warranty, and a free warranty inspection.',
       ctaPrimary: 'Request a free call',
       ctaSecondary: 'See our work',
       statsLabel0: 'Free consultation',
@@ -321,7 +321,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Certified materials',
-          body: 'We use only European-origin membranes.',
+          body: 'We use quality and durable materials from reliable manufacturers.',
         },
       ],
       typesTitle: 'Ceiling types',
@@ -370,7 +370,7 @@ export const translations: Record<Locale, Dict> = {
       title: 'About us',
       paragraphs: [
         'Pinglagi is a team of certified stretch ceiling installers offering quality ceiling solutions across Estonia.',
-        'We work only with certified European materials and pay close attention to every detail to ensure a quality and durable result.',
+        'We work only with certified materials and pay close attention to every detail to ensure a quality and durable result.',
         'Our goal is to create stretch ceilings that combine aesthetics, durability, and impeccable finish.',
       ],
       valuesTitle: 'Our principles',
@@ -385,7 +385,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Certificates',
-          body: 'Certified installers and European quality materials.',
+          body: 'Certified installers and quality materials.',
         },
       ],
     },
@@ -447,7 +447,8 @@ export const translations: Record<Locale, Dict> = {
       email: 'info@pinglagi.eu',
       hoursLabel: 'Hours',
       hours: 'Mon-Fri 9:00 - 18:00',
-      hoursNote: 'Outside these hours by appointment – leave a request at a time that suits you.',
+      hoursNote:
+        'Outside these hours by appointment – leave a request at a time that suits you.',
     },
     footer: {
       tagline: 'Quality stretch ceilings across Estonia.',
@@ -478,7 +479,7 @@ export const translations: Record<Locale, Dict> = {
       heroEyebrow: 'СОВРЕМЕННЫЕ ПОТОЛОЧНЫЕ РЕШЕНИЯ',
       heroTitle: 'Натяжные потолки, которые служат десятилетиями',
       heroSubtitle:
-        'Профессиональный монтаж, сертифицированные европейские материалы, письменная гарантия и бесплатный гарантийный осмотр.',
+        'Профессиональный монтаж, качественные материалы, письменная гарантия и бесплатный гарантийный осмотр.',
       ctaPrimary: 'Заказать бесплатный звонок',
       ctaSecondary: 'Смотреть работы',
       statsLabel0: 'Бесплатная консультация',
@@ -505,7 +506,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Сертифицированные материалы',
-          body: 'Используем только плёнки европейского производства.',
+          body: 'Используем качественные и долговечные материалы от надёжных производителей.',
         },
       ],
       typesTitle: 'Типы потолков',
@@ -554,7 +555,7 @@ export const translations: Record<Locale, Dict> = {
       title: 'О нас',
       paragraphs: [
         'Pinglagi – команда сертифицированных монтажников натяжных потолков, предлагающая качественные потолочные решения по всей Эстонии.',
-        'Работаем только с сертифицированными европейскими материалами и уделяем внимание каждой детали, чтобы обеспечить качественный и долговечный результат.',
+        'Работаем только с сертифицированными материалами и уделяем внимание каждой детали, чтобы обеспечить качественный и долговечный результат.',
         'Наша цель – создавать натяжные потолки, объединяющие эстетику, долговечность и безупречную отделку.',
       ],
       valuesTitle: 'Наши принципы',
@@ -569,7 +570,7 @@ export const translations: Record<Locale, Dict> = {
         },
         {
           title: 'Сертификаты',
-          body: 'Сертифицированные монтажники и европейские материалы высокого качества.',
+          body: 'Сертифицированные монтажники и качественные материалы.',
         },
       ],
     },
@@ -631,7 +632,8 @@ export const translations: Record<Locale, Dict> = {
       email: 'info@pinglagi.eu',
       hoursLabel: 'Часы работы',
       hours: 'Пн-Пт 9:00 - 18:00',
-      hoursNote: 'В другое время по договорённости – оставьте заявку в удобное для вас время.',
+      hoursNote:
+        'В другое время по договорённости – оставьте заявку в удобное для вас время.',
     },
     footer: {
       tagline: 'Качественные натяжные потолки по всей Эстонии.',
