@@ -101,3 +101,12 @@ export default function Callback() {
     </Layout>
   );
 }
+
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: '/contact',
+      permanent: false,
+    },
+  };
+}

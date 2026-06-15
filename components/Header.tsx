@@ -85,7 +85,7 @@ export default function Header() {
 
           <HStack spacing={2}>
             <LanguageSwitcher />
-            <NextLink href='/callback' passHref legacyBehavior>
+            <NextLink href='/contact' passHref legacyBehavior>
               <Button
                 as='a'
                 colorScheme='accent'
@@ -132,7 +132,7 @@ export default function Header() {
                   </Button>
                 </NextLink>
               ))}
-              <NextLink href='/callback' passHref legacyBehavior>
+              <NextLink href='/contact' passHref legacyBehavior>
                 <Button as='a' colorScheme='accent' mt={4} onClick={onClose}>
                   {t.nav.callback}
                 </Button>

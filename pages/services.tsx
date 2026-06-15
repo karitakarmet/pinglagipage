@@ -92,7 +92,7 @@ export default function Services() {
           <Text color='ink.700' fontSize='lg' mb={6}>
             {t.home.ctaBannerBody}
           </Text>
-          <NextLink href='/callback' passHref legacyBehavior>
+          <NextLink href='/contact' passHref legacyBehavior>
             <Button
               as='a'
               colorScheme='accent'

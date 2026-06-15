@@ -103,7 +103,7 @@ export default function Home() {
                 {t.home.heroSubtitle}
               </Text>
               <HStack spacing={4} flexWrap='wrap'>
-                <NextLink href='/callback' passHref legacyBehavior>
+                <NextLink href='/contact' passHref legacyBehavior>
                   <Button
                     as='a'
                     colorScheme='accent'
@@ -287,7 +287,7 @@ export default function Home() {
           <Text fontSize='lg' color='whiteAlpha.800' mb={8}>
             {t.home.ctaBannerBody}
           </Text>
-          <NextLink href='/callback' passHref legacyBehavior>
+          <NextLink href='/contact' passHref legacyBehavior>
             <Button
               as='a'
               colorScheme='accent'
