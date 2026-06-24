@@ -6,6 +6,7 @@ type Dict = {
     home: string;
     services: string;
     gallery: string;
+    ceilingTypes: string;
     about: string;
     faq: string;
     contact: string;
@@ -94,6 +95,7 @@ export const translations: Record<Locale, Dict> = {
       home: 'Avaleht',
       services: 'Teenused',
       gallery: 'Galerii',
+      ceilingTypes: 'Pinglae tüübid',
       about: 'Meist',
       faq: 'KKK',
       contact: 'Kontakt',
@@ -278,6 +280,7 @@ export const translations: Record<Locale, Dict> = {
       home: 'Home',
       services: 'Services',
       gallery: 'Gallery',
+      ceilingTypes: 'Ceiling types',
       about: 'About',
       faq: 'FAQ',
       contact: 'Contact',
@@ -463,6 +466,7 @@ export const translations: Record<Locale, Dict> = {
       home: 'Главная',
       services: 'Услуги',
       gallery: 'Галерея',
+      ceilingTypes: 'Типы потолков',
       about: 'О нас',
       faq: 'Вопросы',
       contact: 'Контакты',

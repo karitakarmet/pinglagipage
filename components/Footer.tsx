@@ -12,6 +12,7 @@ import { useT } from '@/lib/useT';
 
 const navItems = [
   { key: 'about', href: '/about' },
+  { key: 'ceilingTypes', href: '/ceiling-types' },
   { key: 'faq', href: '/faq' },
   { key: 'contact', href: '/contact' },
 ] as const;
