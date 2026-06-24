@@ -251,7 +251,7 @@ export const translations: Record<Locale, Dict> = {
       messagePlaceholder: 'Ruumi suurus, soovid, muu info...',
       submit: 'Telli kõne',
       success: 'Aitäh! Helistame tagasi peagi.',
-      privacy: 'Meie ei jaga teie andmeid kolmandate osapooltega.',
+      privacy: 'Me ei jaga teie andmeid kolmandate osapooltega.',
     },
     contact: {
       title: 'Võta meiega ühendust',
